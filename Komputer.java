@@ -8,14 +8,6 @@ package semester2.tugas.jobsheet7;
  *
  * @author HYPE AMD
  */
-// =============================================
-// CLASS DIAGRAM: Inheritance (Pewarisan)
-// Komputer -> Laptop -> Mac
-//                    -> Windows (via Laptop)
-// Komputer -> Pc
-// =============================================
-
-// ---- Superclass: Komputer ----
 class Komputer {
     public String merk;
     public int kecProsesor;
@@ -39,7 +31,6 @@ class Komputer {
     }
 }
 
-// ---- Subclass: Laptop (extends Komputer) ----
 class Laptop extends Komputer {
     public String jnsBatrei;
 
@@ -56,7 +47,6 @@ class Laptop extends Komputer {
     }
 }
 
-// ---- Subclass: Mac (extends Laptop) ----
 class Mac extends Laptop {
     public String security;
 
@@ -73,7 +63,6 @@ class Mac extends Laptop {
     }
 }
 
-// ---- Subclass: Windows (extends Laptop) ----
 class Windows extends Laptop {
     public String fitur;
 
@@ -90,7 +79,6 @@ class Windows extends Laptop {
     }
 }
 
-// ---- Subclass: Pc (extends Komputer) ----
 class Pc extends Komputer {
     public int ukuranMonitor;
 
